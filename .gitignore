@@ -24,3 +24,6 @@ image_processor-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore ElixirLS build
+/.elixir_ls/
