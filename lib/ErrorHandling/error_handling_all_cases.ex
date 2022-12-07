@@ -17,6 +17,5 @@ defmodule ErrorHandling do
     after
       File.close(file)
     end
-
   end
 end
