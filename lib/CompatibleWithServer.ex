@@ -16,5 +16,7 @@ end
 
 # compatible_with_server_integer
 defimpl CompatibleWithServer, for: Integer do
-  def is_compatible(_type), do: "Integer"
+  def is_compatible(value) do
+    if value > 100, do: raise(PrivilegeError), else: "Welcome to the server."
+  end
 end
