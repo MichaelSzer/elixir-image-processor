@@ -8,8 +8,10 @@ defmodule OptionalSyntax do
       case rem(option, 3) do
         0 ->
           clauses[:first].()
+
         1 ->
           clauses[:second].()
+
         2 ->
           clauses[:third].()
       end

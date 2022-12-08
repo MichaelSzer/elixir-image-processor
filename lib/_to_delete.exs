@@ -9,13 +9,15 @@ end
 
 IO.puts(
   Example.fun(
-    [do: Call.this(), else: Call.that()]
+    do: Call.this(),
+    else: Call.that()
   )
 )
 
-IO.puts(
+dbg(
   if(
     true,
-    [do: Call.this(), else: Call.that()]
+    do: Call.this(),
+    else: Call.that()
   )
 )
